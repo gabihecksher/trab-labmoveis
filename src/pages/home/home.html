@@ -1,0 +1,42 @@
+<html><ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <!--<ion-item><page-usuario></page-usuario></ion-item> -->
+    
+  </ion-list>
+
+  <ion-card class="bg-transparent" *ngFor="let usuario of usuarios" > <!--tinha um | async no ngFor, tirei pq deu erro -->
+    <ion-item class="bg-white">
+      <h2>{{ usuario.nome }}</h2>
+      <p>{{ usuario.email }}</p>
+      <p>{{ usuario.idade}}</p>
+      <p>{{ usuario.cpf }}</p>
+
+      <!-- TEORICAMENTE SERVE PRA EXCLUIR UM USUARIO -->
+      <ion-buttons end> <!-- // for button to be positioned right -->
+        <button ion-button icon-only (click)="deletar(usuario)">
+          <ion-icon name="md-trash"></ion-icon>
+        </button>
+      </ion-buttons>
+
+    </ion-item>
+  </ion-card> 
+
+  <!-- 
+    BOTAO ANTIGO
+  <button ion-button (click)="cadastrar()">+</button> 
+  -->
+  
+  <ion-fab center bottom> <!-- fixa o botao -->
+    <button ion-fab (click)="cadastrar()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+  
+</ion-content>
+</html>

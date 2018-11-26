@@ -1,0 +1,53 @@
+page-home {
+    .bg-transparent{
+        //background-color:rgb(248, 157, 21) !important;
+    }
+
+    h2{
+        margin-top:10x !important;
+        margin-bottom:10px !important;
+    }
+    //.item-md, .card-md{
+    //    background: rgb(33, 99, 100) !important;
+    //    border: 1px solid #473700 !important;
+    //    border-radius: 10px !important;
+    //    height:120px !important;
+    //    color:rgb(212, 206, 218) !important;
+    //}
+    //.card-md h2{
+    //    color:rgb(243, 233, 248);
+    //}
+
+    .bg-transparent {
+        background: #218380 !important;
+        border-radius: 10px !important;
+        color: white !important;
+        
+    }
+
+    .bg-white {
+        color: white !important;
+        background: #218380 !important;
+        margin: 4px !important;
+    }
+
+    .label h2{
+        font-family: "Century Gothic" !important;
+        font-size: 20px;
+        color: white !important;
+    }
+
+    .label p{
+        font-family: "Century Gothic" !important;
+        font-size: 15px;
+        color: white !important;
+    }
+ 
+    .fab{
+        background-color: #501B4A !important;
+    }
+
+    .toolbar-title-md {
+        text-align:center;
+    }
+}
